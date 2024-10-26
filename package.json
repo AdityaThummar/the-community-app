@@ -1,0 +1,37 @@
+{
+  "name": "the-community-app",
+  "version": "1.0.0",
+  "main": "./app/index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.7.4",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "http-errors": "^2.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.7.0"
+  },
+  "scripts": {
+    "start": "nodemon ./app/index.ts"
+  },
+  "_moduleAliases": {
+    "@utils": "./app/utils/index.ts",
+    "@controllers": "./app/controllers/index.ts",
+    "@routes": "./app/routes/index.ts",
+    "@db": "./app/db/index.ts",
+    "@models": "./app/models/index.ts",
+    "@configs": "./app/configs/index.ts",
+    "@validators": "./app/validators/index.ts",
+    "@middlewares": "./app/middlewares/index.ts"
+  }
+}
